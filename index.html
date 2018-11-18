@@ -8,12 +8,17 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" href="assets/img/icon.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         <script src="assets/js/script.js" defer></script>
     </head>
 
     <body>
+        <!-- BARRA DE NAVEGAÇÃO -->
         <header>
-            <a href="index.html"> <img src="assets/img/icon.png" alt="Jogo da velha"> </a>
+            <div class="logo">
+                <a href="index.html"> <img src="assets/img/icon.png" alt="Jogo da velha"> </a>
+                <a href="index.html"> <h1 class="logo"> Jogo da Velha </h1></a>
+            </div>
             <button class="botaoMenu"> <i class="fas fa-bars fa-lg"></i></button>
             <nav class="menu">
                 <a class="botaoFecharMenu"> <i class="fa fa-times"></i> </a>
@@ -24,24 +29,27 @@
             </nav>
         </header>
 
-        <main id="infos">
-            <section class="paginaInicial">
-                <div class="nivelDificuldade">
-                    <button class="botaoFacil"> Fácil </button>
-                    <button class="botaoDificil"> Difícil </button>
-                    <button class="botaoImpossivel"> Impossível </button>
+        <main>
+            <!-- PAGINA INICIAL DO JOGO -->
+            <div class="paginaInicial">
+                <div>
+                    <button class="botaoNivel"> Fácil </button>
+                    <button class="botaoNivel"> Difícil </button>
+                    <button class="botaoNivel"> Impossível </button>
                 </div>
     
-                <div class="play">
+                <div>
                     <button class="botaoPlay"> <i class="fas fa-play"></i> </button>
                 </div>
-            </section>
+            </div>
 
-            <section class="jogoIniciado">
+            <!-- PAGINA DO JOGO -->
+            <div class="jogoIniciado">
                 <!-- AQUI FICA O JOGO -->
-            </section>
+            </div>
 
-            <section class="paginaDeInfo">
+            <!-- INFOS QUE FICARÃO EMBAIXO DO JOGO -->
+            <div id="infos" class="paginaInfo">
                 <div class="sobreJogo">
                     <h1> Sobre o jogo </h1>
                     <p> O #JogoDaVelha possui regras muito simples. O objetivo do jogo é ser o primeiro a fazer uma sequência de três símbolos iguais, seja em uma linha, coluna ou diagonal. </p>
@@ -49,16 +57,15 @@
 
                 <div class="sobreJogo">
                     <h1> Como jogar </h1>
-                    <p> Escolha um dos símbolos: X ou O </p>
-                    <p> Em seguida, clique em cima do local onde deseja iniciar a jogada. </p>
-                    <p> Repita o último passo até que um linha de três símbolos iguais seja formada na horizontal, vertical ou diagonal. </p>
+                    <p> Escolha um dos símbolos: X ou O. Em seguida, clique em cima do local onde deseja iniciar a jogada. Repita o último passo até que um linha de três símbolos iguais seja formada na horizontal, vertical ou diagonal.</p>
                 </div>  
-            </section>
+            </div>
         </main>
 
+        <!-- RODAPÉ SIMPLES -->
         <footer>
             <p class="copyright"> 
-                    &copy; Yasmin Monteiro & Júlio Cesar. Todos os direitos reservados.
+                &copy; Yasmin Monteiro & Júlio Cesar. Todos os direitos reservados.
             </p>
         </footer>
     </body>
